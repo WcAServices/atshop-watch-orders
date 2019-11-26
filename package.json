@@ -18,5 +18,8 @@
   "homepage": "https://github.com/WcAServices/atshop-watch-orders#readme",
   "dependencies": {
     "simpleddp": "^2.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.2"
   }
 }
