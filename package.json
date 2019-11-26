@@ -20,6 +20,7 @@
     "simpleddp": "^2.2.4"
   },
   "devDependencies": {
+    "@types/node": "^12.12.14",
     "typescript": "^3.7.2"
   }
 }
