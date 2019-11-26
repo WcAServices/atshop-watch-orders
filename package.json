@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/WcAServices/atshop-watch-orders#readme",
   "dependencies": {
+    "config": "^3.2.4",
     "simpleddp": "^2.2.4",
     "ws": "^7.2.0"
   },
   "devDependencies": {
+    "@types/config": "0.0.36",
     "@types/node": "^12.12.14",
     "@types/ws": "^6.0.4",
     "typescript": "^3.7.2"
