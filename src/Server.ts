@@ -1,7 +1,7 @@
 import WebSocket from 'ws';
 import Config from 'config';
 const SimpleDDP = require('simpleddp');
-const SimpleDDPLogin = require('simpleddp-plugin-login');
+const SimpleDDPLogin = require('simpleddp-plugin-login').simpleDDPLogin;
 
 const Server = new SimpleDDP({
     endpoint: 'wss://atshop.io/websocket',
