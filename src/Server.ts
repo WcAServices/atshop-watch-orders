@@ -5,7 +5,7 @@ const SimpleDDPLogin = require('simpleddp-plugin-login');
 
 const Server = new SimpleDDP({
     endpoint: 'wss://atshop.io/websocket',
-    socketConstructor: WebSocket,
+    SocketConstructor: WebSocket,
     reconnectInterval: 5000,
 }, [SimpleDDPLogin]);
 
