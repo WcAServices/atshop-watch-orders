@@ -19,6 +19,7 @@
   "dependencies": {
     "config": "^3.2.4",
     "simpleddp": "^2.2.4",
+    "simpleddp-plugin-login": "^4.0.2",
     "ws": "^7.2.0"
   },
   "devDependencies": {
