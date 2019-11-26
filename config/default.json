@@ -1,3 +1,4 @@
 {
-  "loginToken": "Your ATShop login token. https://docs.atshop.io/guide/authentication.html#fetching-your-login-token"
+  "loginToken": "Your ATShop login token. https://docs.atshop.io/guide/authentication.html#fetching-your-login-token",
+  "shopId": "Your ATShop shop ID"
 }
