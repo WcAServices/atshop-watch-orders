@@ -1,8 +1,16 @@
 import WebSocket from 'ws';
+import Config from 'config';
 const SimpleDDP = require('simpleddp');
+const SimpleDDPLogin = require('simpleddp-plugin-login');
 
-export default new SimpleDDP({
+const Server = new SimpleDDP({
     endpoint: 'wss://atshop.io/websocket',
     socketConstructor: WebSocket,
     reconnectInterval: 5000,
+}, [SimpleDDPLogin]);
+
+Server.login({
+    resume: Config.get('loginToken'),
 });
+
+export default Server;
