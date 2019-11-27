@@ -12,6 +12,10 @@ declare module 'simpleddp' {
         }
     }
 
+    export class Subscription {
+        ready(): Promise<void>;
+    }
+
     export interface MeteorCollection<T> {
         onChange(listener: (change: MeteorChange<T>) => void): void
     }
@@ -19,7 +23,8 @@ declare module 'simpleddp' {
     export default class {
         constructor(opts: any, plugins: any[]);
         collection<T = any>(name: string): MeteorCollection<T>
-        login(options: KeyVal): Promise<{ id: string, token: string, tokenExpires: any, type: string }>;
+        login(options: KeyVal): Promise<{ id: string, token: string, tokenExpires: any, type: string }>
+        subscribe(name: string, ...args: any): Subscription;
     }
 }
 
