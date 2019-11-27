@@ -37,3 +37,8 @@ node dist
 Whenever an order is paid you'll see the order's details printed to the console.
 
 ![Example image](https://i.gyazo.com/8eb831a9455082a5d6188f28f8208b64.png)
+
+## License
+This repository is licensed under the ISC license.
+
+Copyright (c) 2019, WCA DEV SERVICES SRL.
