@@ -1,6 +1,6 @@
 import WebSocket from 'ws';
 import Config from 'config';
-const SimpleDDP = require('simpleddp');
+import SimpleDDP from 'simpleddp';
 const SimpleDDPLogin = require('simpleddp-plugin-login').simpleDDPLogin;
 
 const Server = new SimpleDDP({
