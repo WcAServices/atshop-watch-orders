@@ -1,12 +1,12 @@
 declare module 'simpleddp' {
     export interface MeteorChange<T> {
         fieldsChanged?: Partial<T>,
-        added: boolean | T,
-        removed: boolean | T
-        changed: boolean | {
-            prev?: T,
-            next?: T,
-            fields?: {
+        added: false | T,
+        removed: false | T
+        changed: false | {
+            prev: T,
+            next: T,
+            fields: {
                 [key: string]: 1,
             },
         }
