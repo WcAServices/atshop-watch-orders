@@ -17,7 +17,7 @@ declare module 'simpleddp' {
     }
 
     export default class {
-        constructor(opts: any);
+        constructor(opts: any, plugins: any[]);
         collection<T = any>(name: string, plugins: any[]): MeteorCollection<T>
         login(options: KeyVal): Promise<{ id: string, token: string, tokenExpires: any, type: string }>;
     }
