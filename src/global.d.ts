@@ -12,8 +12,8 @@ declare module 'simpleddp' {
         }
     }
 
-    export class MeteorCollection<T> {
-        onChange(callback: (change: MeteorChange<T>) => any): void
+    export interface MeteorCollection<T> {
+        onChange(listener: (change: MeteorChange<T>) => void): void
     }
 
     export default class {
